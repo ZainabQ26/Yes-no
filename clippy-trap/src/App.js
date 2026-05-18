@@ -5,7 +5,6 @@ function App() {
   const [screen, setScreen] = useState('prompt');
   const [ballPos, setBallPos] = useState({ top: 0, left: 75 });
   
-  // 1. New state variable to control when the image pops up
   const [showImage, setShowImage] = useState(false);
 
   useEffect(() => {
@@ -14,7 +13,6 @@ function App() {
       setTimeout(() => { setBallPos({ top: 60, left: 45 }) }, 800);
       setTimeout(() => { setBallPos({ top: 90, left: 25 }) }, 1200);
       
-      // 2. Trigger after the ball rolls to the bottom YES slot
       setTimeout(() => {
         setShowImage(true);
       }, 2000);
@@ -23,7 +21,6 @@ function App() {
 
   return (
     <div style={styles.card}>
-      {/* 3. Conditional Layout: If showImage is true, show the image takeover. Otherwise, show the normal app */}
       {showImage ? (
         <div style={styles.imageContainer}>
           <img src={whyyImg} alt="Why" style={styles.fullscreenImg} />
@@ -33,7 +30,6 @@ function App() {
           <div>
             <h2>Are you POSITIVELY positive you wanna delete this?</h2>
             <div style={styles.topButtonsContainer}>
-              {/* 4. Trigger instantly if they hit the top YES button */}
               <button style={styles.topYesBtn} onClick={() => setShowImage(true)}>YES</button>
               <button style={styles.topNopeBtn} onClick={() => setScreen("game")}>NOPE</button>
             </div>
@@ -41,12 +37,10 @@ function App() {
 
           {screen === "game" && (
             <div style={styles.board}>
-              {/* Pins */}
               <div style={{ position: 'absolute', width: '8px', height: '8px', background: '#555', borderRadius: '50%', top: '25%', left: '75%' }} />
               <div style={{ position: 'absolute', width: '8px', height: '8px', background: '#555', borderRadius: '50%', top: '50%', left: '60%' }} />
               <div style={{ position: 'absolute', width: '8px', height: '8px', background: '#555', borderRadius: '50%', top: '75%', left: '45%' }} />
               
-              {/* Ball */}
               <div style={{
                 position: 'absolute',
                 width: '20px',
@@ -59,7 +53,6 @@ function App() {
                 transition: 'all 0.3s ease-in-out'
               }} />
               
-              {/* Bottom Slots */}
               <div style={styles.slotsContainer}>
                 <div style={styles.yesSlot}>YES</div>
                 <div style={styles.noSlot}>NO</div>
@@ -149,7 +142,6 @@ const styles = {
     justifyContent: 'center',
     fontFamily: 'sans-serif'
   },
-  // Clean styles to fit the image perfectly inside your card container
   imageContainer: {
     display: 'flex',
     justifyContent: 'center',
