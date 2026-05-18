@@ -1,11 +1,11 @@
 # Yes/No Project
 
-A small repo containing a minimal React demo and earlier Yes/No prototypes. The active demo lives in the `clippy-trap` folder and demonstrates a simple two-screen UI and position-based animation.
+Small project for user to pick yes or no ultimately deleting anyways.
 
 ## Technologies
 
-- **Language:** JavaScript (ESNext)
-- **Framework:** React (Create React App)
+- **Language:** JavaScript 
+- **Framework:** React 
 - **Package manager:** npm
 
 ## Running the Application
@@ -23,7 +23,7 @@ npm install
 npm start
 ```
 
-Open http://localhost:3000 to view the app. The page reloads on edits.
+Open http://localhost:3002 to view the app. The page reloads on edits.
 
 ## Building from the command line
 
@@ -44,22 +44,6 @@ This will produce an optimized production build under `clippy-trap/build/`.
 - Two-screen flow: `prompt` and `game` modes
 - Position-based animation driven by `useEffect` and inline styles
 
-## Notes & Recommendations
-
-- The red color for the NO slot is controlled by `styles.noSlot.background` in `clippy-trap/src/App.js`.
-- Avoid `alert()` for in-app feedback (it blocks rendering/animations); use a toast or modal instead.
-- Use strict equality (`===`) when comparing `screen` in `useEffect`.
-- Remove any invisible non-breaking spaces or stray whitespace characters near conditional checks to avoid linter/editor confusion.
-
-## Features (short)
-
-- Minimal demo UI
-- Lightweight, single-file component for quick iteration
-
-## Contact
-
-Zainab Qazi — GitHub: https://github.com/ZainabQ26
-
----
-
-If you'd like, I can commit and push this README for you. I can also apply the small code cleanups suggested above.
+  
+##  Contact
+**Zainab Qazi** - [GitHub](https://github.com/ZainabQ26) - [LinkedIn](https://www.linkedin.com/in/zainab--qazi/)
