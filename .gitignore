@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+
+# Production
+/build
+/dist
+
+# Misc
+.DS_Store
+*.pyc
+*.env
+*.env.local
+*.log
+YesNoMaybe.py
+YesNoMaybe.html
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
