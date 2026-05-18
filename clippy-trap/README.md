@@ -68,3 +68,30 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+---
+
+## App notes (clippy-trap/src/App.js)
+
+- Purpose: A minimal single-file UI demonstrating a two-screen flow and a simple animated "ball" moving into two slots (YES / NO).
+- Key state:
+	- `screen` — controls which screen renders (`'prompt'` or `'game'`).
+	- `ballPos` — `{ top, left }` in percent used to position the moving element.
+- Animation: `useEffect` watches `screen`; when it becomes `"game"` it schedules three `setTimeout` calls to update `ballPos` and finally shows an `alert`.
+- Styling: CSS-in-JS `styles` object in the same file. The `noSlot` uses `background: '#ff3366'` (the red color you observed).
+
+Recommended fixes / improvements
+- Use strict equality: replace `if (screen == "game")` with `if (screen === "game")`.
+- Avoid `alert()` for in-app feedback (blocks rendering/animations). Use a modal, toast, or on-screen message instead.
+- There is an invisible non-breaking space character near the `if (screen == "game")` which can confuse linters/editors — remove stray whitespace.
+- Consider extracting animation timings/positions into constants or using CSS transitions / an animation library for smoother control.
+
+Run the app locally:
+
+```bash
+cd clippy-trap
+npm install
+npm start
+```
+
+File: [clippy-trap/src/App.js](clippy-trap/src/App.js)
