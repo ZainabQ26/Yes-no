@@ -1,6 +1,6 @@
 # Yes/No Project
 
-A small React app with  yes or no interaction.[page:2]
+A small React app with  yes or no interaction.
 
 ## Technologies
 - JavaScript
