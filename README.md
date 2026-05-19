@@ -1,18 +1,22 @@
 # Yes/No Project
 
-Small project for user to pick yes or no ultimately deleting anyways.
+A small React app with  yes or no interaction.[page:2]
 
 ## Technologies
+- JavaScript
+- React
+- npm
 
-- **Language:** JavaScript 
-- **Framework:** React 
-- **Package manager:** npm
+## Run
+```bash
+cd clippy-trap
+npm install
+npm start
+```
+
+Open `http://localhost:3002` in your browser.
 
 ## Features
-
-- Two-screen flow: `prompt` and `game` modes
-- Position-based animation driven by `useEffect` and inline styles
-
-  
-##  Contact
-**Zainab Qazi** - [GitHub](https://github.com/ZainabQ26) - [LinkedIn](https://www.linkedin.com/in/zainab--qazi/)
+- Simple yes/no interaction
+- Two-screen flow
+- Playful UI behavior
