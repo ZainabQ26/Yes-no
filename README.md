@@ -19,4 +19,6 @@ Open `http://localhost:3002` in your browser.
 ## Features
 - Simple yes/no interaction
 - Two-screen flow
-- Playful UI behavior
+  
+##  Contact
+**Zainab Qazi** - [GitHub](https://github.com/ZainabQ26) - [LinkedIn](https://www.linkedin.com/in/zainab--qazi/)
