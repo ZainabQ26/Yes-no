@@ -1,6 +1,6 @@
 # Yes/No Project
 
-A small React app with  yes or no interaction.
+Fun program doesn't take no for an answer
 
 ## Technologies
 - JavaScript
