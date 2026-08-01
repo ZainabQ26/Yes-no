@@ -1,6 +1,6 @@
 # Yes/No Project
 
-Fun program doesn't take no for an answer
+A frustrating  program with two options that forces you into a single choice that always leads to yes.
 
 ## Technologies
 - JavaScript
